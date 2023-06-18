@@ -1,5 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:ital,wght@0,400;1,200&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas de hasta 600px de ancho */
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+    .text-box {
+        font-size: 14px;
+    }
+    /* Otros estilos específicos para pantallas pequeñas */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Estilos para pantallas de hasta 768px de ancho */
+    /* Aquí puedes agregar estilos adicionales según sea necesario */
+}
+@media only screen and (max-width: 600px) {
+    .main-title,
+    .section-title {
+        text-align: center; /* Centra los títulos en pantallas pequeñas */
+    }
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    .sec-04 {
+        height: auto; /* Permite que la sección sec-04 se expanda correctamente */
+    }
+}
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column; /* Cambia la dirección de los elementos en pantallas pequeñas */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .content .image {
+        order: 2; /* Cambia el orden de las imágenes */
+        margin-bottom: 10px; /* Añade un margen inferior para separar las imágenes de los textos */
+    }
+
+    .content .text-box {
+        order: 1; /* Cambia el orden de los textos */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        text-align: center; /* Centra el contenido del footer horizontalmente */
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -139,7 +189,7 @@ section {
 }
 
 .sec-04 {
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
 
 .sec-04 .content {
@@ -163,7 +213,7 @@ section {
     margin-right: 300px;
 }
 
-/* Estilos para o footer */
+/* Estilos para el footer */
 footer {
     background-image: linear-gradient(to right, #ffffffbf, #171717);
     color: #fff;
@@ -175,7 +225,7 @@ footer {
     width: 100%;
 }
 
-/* Estilos para os ícones */
+/* Estilos para los íconos */
 footer .social-icons {
     display: flex;
     justify-content: center;
@@ -194,4 +244,4 @@ footer .social-icons a:hover {
     color: #000;
 }
 
-/* Estilos adicionais conforme necessário */
+/* Estilos adicionales según sea necesario */
